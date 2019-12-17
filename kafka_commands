@@ -1,0 +1,47 @@
+zookeeper-server-start.bat ..\..\config\zookeeper.properties
+
+kafka-server-start.bat ..\..\config\server.properties
+
+kafka-topics --list --zookeeper localhost:2181
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic viewrecords
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic sql-insert
+
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic sql-insert
+
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic sql-insert
+
+
+kafka-console-consumer.bat — zookeeper localhost:2181 — topic sql-insert
+
+
+kafka-console-consumer.bat --zookeeper localhost:2181 --topic sql-insert
+
+
+
+kafka-console-consumer.bat --zookeeper localhost:2181 --topic sql-insert
+
+
+kafka-console-consumer.bat --zookeeper localhost:2181 —topic sql-insert  --from-beginning
+
+kafka-console-consumer.bat --bootstrap-server localhost:2181 --topic sql-insert
+
+
+kafka-console-producer.bat — broker-list localhost:9092 — topic sql-insert
+
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic sql-insert
+
+kafka-console-consumer.bat localhost:9092 --whitelist --topic sql-insert
+
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+kafka-console-consumer.bat --bootstrap-server localhost:2181 —topic sql-insert --from-beginning --whitelist sql-insert
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic sql-insert --from-beginning
+
+D:\spark\hadoop\bin\winutils.exe chmod 777 D:\tmp\hive

@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b935c4a6-a26c-4a19-981c-04c1397b7e76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/DataFrames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/Socket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/SparkCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/SparkSQLRaw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/SparkUDF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/ViewReportsSimulator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/SparkSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/SparkSQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/virtual/pairprogrammers/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/virtual/pairprogrammers/Main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,32 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="40" column="78" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/ViewReportsSimulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/Socket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+            <state relative-caret-position="204">
+              <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,6 +53,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/Socket.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/ViewReportsSimulator.java" />
       </list>
     </option>
   </component>
@@ -89,8 +65,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="246" />
-    <option name="y" value="486" />
+    <option name="x" value="327" />
+    <option name="y" value="365" />
     <option name="width" value="1400" />
     <option name="height" value="790" />
   </component>
@@ -141,7 +117,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576559975589" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576605184990" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -204,6 +180,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -218,7 +195,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47020584" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3445287" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -321,18 +298,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/Socket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
+        <state relative-caret-position="336">
           <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="40" column="78" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -341,8 +308,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+        <state relative-caret-position="155">
+          <caret line="62" column="19" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa8460.508/viewing-figures-generation/src/main/java/com/virtualpairprogrammers/viewing/ViewReportsSimulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="99" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/ViewReportsSimulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
