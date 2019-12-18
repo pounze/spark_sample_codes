@@ -10,7 +10,7 @@ import org.apache.spark.streaming.kafka010.ConsumerStrategies;
 import org.apache.spark.streaming.kafka010.KafkaUtils;
 import org.apache.spark.streaming.kafka010.LocationStrategies;
 import org.apache.spark.streaming.kafka010.LocationStrategy;
-import org.codehaus.jackson.map.deser.std.StringDeserializer;
+import org.apache.kafka.common.serialization.StringDeserializer;
 import scala.Tuple2;
 
 import java.util.Arrays;
@@ -27,9 +27,9 @@ public class DStreamVersionsKafka
         Logger.getLogger("org.apache").setLevel(Level.WARNING);
         SparkConf conf = new SparkConf().setAppName("viewingFigures").setMaster("local[*]");
 
-        JavaStreamingContext sc = new JavaStreamingContext(conf, Durations.seconds(2));
+        JavaSparkContext sc = new JavaSparkContext(conf);
 
-        //JavaStreamingContext ssc = new JavaStreamingContext(sc, new Duration(1));
+        JavaStreamingContext ssc = new JavaStreamingContext(sc, Durations.seconds(2));
 
         Collection topics = Arrays.asList("viewrecords","sql-insert");
 
@@ -42,18 +42,23 @@ public class DStreamVersionsKafka
         kafkaParams.put("auto.offset.reset", "latest");
         //kafkaParams.put("enable.auto.commit", false);
 
-        JavaInputDStream<ConsumerRecord<String, String>> stream =
+        final JavaInputDStream<ConsumerRecord<String, String>> stream =
         KafkaUtils.createDirectStream(
-                sc,
+                ssc,
                 LocationStrategies.PreferConsistent(),
                 ConsumerStrategies.Subscribe(topics, kafkaParams)
         );
 
-        JavaDStream<String> results = stream.map(item -> item.value());
+        //JavaDStream<String> results = stream.map(item -> item.value());
 
-        results.print();
+        JavaPairDStream<Long, String> results = stream.mapToPair(item -> new Tuple2<>(item.value(), 5L))
+                .reduceByKeyAndWindow((x,y) -> x+y, Durations.minutes(2), Durations.minutes(1))
+                .mapToPair(item -> item.swap())
+                .transformToPair(rdd -> rdd.sortByKey(false));
 
-        sc.start();
-        sc.awaitTermination();
+        results.print(50);
+
+        ssc.start();
+        ssc.awaitTermination();
     }
 }
