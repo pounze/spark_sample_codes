@@ -29,15 +29,21 @@ public class WordCount
 
         // split up the lines in paris (2-tuples) containing (word,1)
 
-        DataSet<Tuple2<String,Integer>> counts = filtered.flatMap(new FlatMapFunction<String, Tuple2<String, Integer>>() {
-            @Override
-            public void flatMap(String value, Collector<Tuple2<String, Integer>> out)
-                    throws Exception {
-                for(String word: value.toLowerCase().split(" ")){
-                    out.collect(new Tuple2<>(word, 1));
-                }
+//        DataSet<Tuple2<String,Integer>> counts = filtered.flatMap(new FlatMapFunction<String, Tuple2<String, Integer>>() {
+//            @Override
+//            public void flatMap(String value, Collector<Tuple2<String, Integer>> out)
+//                    throws Exception {
+//                for(String word: value.toLowerCase().split(" ")){
+//                    out.collect(new Tuple2<>(word, 1));
+//                }
+//            }
+//        }).groupBy(0).sum(1);
+
+        DataSet<Tuple2<String,Integer>> counts = filtered.flatMap((String value, Collector<Tuple2<String, Integer>> out) -> {
+            for(String word: value.toLowerCase().split(" ")){
+                out.collect(new Tuple2<>(word, 1));
             }
-        }).groupBy(0).sum(1);
+        }).returns(Types.TUPLE(Types.STRING, Types.INT)).groupBy(0).sum(1);
 
 //        DataSet<Tuple2<String,Integer>> tokenized = words.map(value -> Tuple2.of(value, 1)).returns(Types.TUPLE(Types.STRING, Types.INT));
 
