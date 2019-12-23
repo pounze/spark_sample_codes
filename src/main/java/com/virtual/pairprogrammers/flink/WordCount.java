@@ -39,14 +39,14 @@ public class WordCount
 //            }
 //        }).groupBy(0).sum(1);
 
-        DataSet<Tuple2<String,Integer>> counts = filtered.flatMap((String value, Collector<Tuple2<String, Integer>> out) -> {
-            for(String word: value.toLowerCase().split("\\W+"))
-            {
-                if(word.trim() != "")
+            DataSet<Tuple2<String,Integer>> counts = filtered.flatMap((String value, Collector<Tuple2<String, Integer>> out) -> {
+                for(String word: value.toLowerCase().split("\\W+"))
                 {
-                    out.collect(new Tuple2<>(word, 1));
+                    if(word.trim() != "")
+                    {
+                        out.collect(new Tuple2<>(word, 1));
+                    }
                 }
-            }
         }).returns(Types.TUPLE(Types.STRING, Types.INT)).groupBy(0).sum(1);
 
 //        DataSet<Tuple2<String,Integer>> tokenized = words.map(value -> Tuple2.of(value, 1)).returns(Types.TUPLE(Types.STRING, Types.INT));
