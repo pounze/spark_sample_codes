@@ -4,6 +4,16 @@
     <list default="true" id="b935c4a6-a26c-4a19-981c-04c1397b7e76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/WordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/virtual/pairprogrammers/flink/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/virtual/pairprogrammers/flink/WordCount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordCount/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordCount/2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordCount/3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordCount/4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordCount/5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordCount/6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordCount/7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordCount/8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordcount_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wordcount_input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,22 +164,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="534" y="394" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576917247011" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1577045135731">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1577073770859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577045135731" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1577045135731">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577073770859" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1577073770859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577045135731" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1577045135731">
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577073770859" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1577073770859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577045135731" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1577045135731">
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577073770859" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1577073770859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577045135731" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577073770859" />
   </component>
   <component name="masterDetails">
     <states>

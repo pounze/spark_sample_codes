@@ -25,7 +25,7 @@ public class WordCount
         // read the text file from given input path
         DataSet<String> text = env.readTextFile("wordcount_input.txt");
 
-        DataSet<String> filtered = text.filter(data -> data.startsWith("I"));
+        DataSet<String> filtered = text.filter(data -> data.length() > 5);
 
         // split up the lines in paris (2-tuples) containing (word,1)
 
@@ -40,8 +40,12 @@ public class WordCount
 //        }).groupBy(0).sum(1);
 
         DataSet<Tuple2<String,Integer>> counts = filtered.flatMap((String value, Collector<Tuple2<String, Integer>> out) -> {
-            for(String word: value.toLowerCase().split(" ")){
-                out.collect(new Tuple2<>(word, 1));
+            for(String word: value.toLowerCase().split("\\W+"))
+            {
+                if(word.trim() != "")
+                {
+                    out.collect(new Tuple2<>(word, 1));
+                }
             }
         }).returns(Types.TUPLE(Types.STRING, Types.INT)).groupBy(0).sum(1);
 
