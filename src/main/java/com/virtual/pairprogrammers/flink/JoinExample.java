@@ -44,6 +44,8 @@ public class JoinExample
 
         joinSet.print();
 
+        System.out.println("##################################################");
+
         DataSet<Tuple3<Integer, String, String>> leftjoinSet = personSet.leftOuterJoin(locationSet).where(0).equalTo(0).with(new JoinFunction<Tuple2<Integer, String>, Tuple2<Integer, String>, Tuple3<Integer, String, String>>() {
             @Override
             public Tuple3<Integer, String, String> join(Tuple2<Integer, String> person, Tuple2<Integer, String> location) throws Exception {
@@ -55,5 +57,41 @@ public class JoinExample
                 return new Tuple3<Integer, String, String>(person.f0, person.f1, location.f1);
             }
         });
+
+        leftjoinSet.print();
+
+        System.out.println("##################################################");
+
+        DataSet<Tuple3<Integer, String, String>> rightjoinSet = personSet.rightOuterJoin(locationSet).where(0).equalTo(0).with(new JoinFunction<Tuple2<Integer, String>, Tuple2<Integer, String>, Tuple3<Integer, String, String>>() {
+            @Override
+            public Tuple3<Integer, String, String> join(Tuple2<Integer, String> person, Tuple2<Integer, String> location) throws Exception {
+                if(person == null)
+                {
+                    return new Tuple3<Integer, String, String>(location.f0, "NULL" , location.f1);
+                }
+
+                return new Tuple3<Integer, String, String>(location.f0, person.f1, location.f1);
+            }
+        });
+
+        rightjoinSet.print();
+
+        DataSet<Tuple3<Integer, String, String>> fullOuterjoinSet = personSet.fullOuterJoin(locationSet).where(0).equalTo(0).with(new JoinFunction<Tuple2<Integer, String>, Tuple2<Integer, String>, Tuple3<Integer, String, String>>() {
+            @Override
+            public Tuple3<Integer, String, String> join(Tuple2<Integer, String> person, Tuple2<Integer, String> location) throws Exception {
+                if(location == null)
+                {
+                    return new Tuple3<Integer, String, String>(person.f0, person.f1, "NULL");
+                }
+                else if(person == null)
+                {
+                    return new Tuple3<Integer, String, String>(location.f0, "NULL" , location.f1);
+                }
+
+                return new Tuple3<Integer, String, String>(location.f0, person.f1, location.f1);
+            }
+        });
+
+        fullOuterjoinSet.print();
     }
 }
