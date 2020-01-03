@@ -8,10 +8,10 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.timestamps.AscendingTimestampExtractor;
 import org.apache.flink.streaming.api.windowing.assigners.SlidingProcessingTimeWindows;
-import org.apache.flink.streaming.api.windowing.assigners.TumblingProcessingTimeWindows;
 import org.apache.flink.streaming.api.windowing.time.Time;
+import org.apache.flink.streaming.api.windowing.triggers.CountTrigger;
 
-public class SlidingWindow
+public class GlobalWindows
 {
     public static void main(String ...args) throws Exception
     {
@@ -33,7 +33,8 @@ public class SlidingWindow
                 return longStringTuple2.f0;
             }
         })
-                .windowAll(SlidingProcessingTimeWindows.of(Time.seconds(5), Time.seconds(5)))
+                .windowAll(org.apache.flink.streaming.api.windowing.assigners.GlobalWindows.create())
+                .trigger(CountTrigger.of(5))
                 .reduce(new ReduceFunction<Tuple2<Long, String>>() {
                     @Override
                     public Tuple2<Long, String> reduce(Tuple2<Long, String> current, Tuple2<Long, String> pre_result) throws Exception {
@@ -44,6 +45,6 @@ public class SlidingWindow
         sum.writeAsText("tumblingwindowout");
 
 
-        env.execute("Sliding Window");
+        env.execute("Global Window");
     }
 }
