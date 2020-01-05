@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b935c4a6-a26c-4a19-981c-04c1397b7e76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/GlobalWindows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/SessionWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/SlidingWindowSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/CheckPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/DataSever.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/FlinkState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/ListState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/ReduceState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/state3/1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/state3/2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/state3/3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/state3/4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/state3/5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/state3/6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/state3/7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/state3/8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/SlidingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/SlidingWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/WindowAll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/virtual/pairprogrammers/flink/TumblingWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/virtual/pairprogrammers/flink/SlidingWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/virtual/pairprogrammers/flink/SlidingWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/virtual/pairprogrammers/flink/SlidingWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/virtual/pairprogrammers/flink/SlidingWindow$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/virtual/pairprogrammers/flink/SlidingWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/virtual/pairprogrammers/flink/SlidingWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/virtual/pairprogrammers/flink/WindowAll$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/virtual/pairprogrammers/flink/WindowAll$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/virtual/pairprogrammers/flink/WindowAll.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +60,35 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576898367374" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.FlinkState">
     <configuration name="AggregateOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.virtual.pairprogrammers.flink.AggregateOperation" />
+      <module name="SparkSample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.virtual.pairprogrammers.flink.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataSever" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.virtual.pairprogrammers.flink.DataSever" />
+      <module name="SparkSample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.virtual.pairprogrammers.flink.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlinkState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.virtual.pairprogrammers.flink.FlinkState" />
       <module name="SparkSample" />
       <extension name="coverage">
         <pattern>
@@ -87,39 +126,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WindowWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.virtual.pairprogrammers.flink.WindowWordCount" />
-      <module name="SparkSample" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.virtual.pairprogrammers.flink.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.virtual.pairprogrammers.flink.WordCount" />
-      <module name="SparkSample" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.virtual.pairprogrammers.flink.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FlinkState" />
+        <item itemvalue="Application.DataSever" />
         <item itemvalue="Application.SlidingWindowSample" />
         <item itemvalue="Application.AggregateOperation" />
         <item itemvalue="Application.JoinExample" />
-        <item itemvalue="Application.WordCount" />
-        <item itemvalue="Application.WindowWordCount" />
       </list>
     </recent_temporary>
   </component>
@@ -152,30 +165,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="741" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1577768445863">
+    <state x="741" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578065733092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="741" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1577768445863" />
-    <state x="534" y="394" key="#com.intellij.ide.util.MemberChooser" timestamp="1576917247011">
+    <state x="741" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578065733092" />
+    <state x="534" y="394" key="#com.intellij.ide.util.MemberChooser" timestamp="1578066502729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="534" y="394" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576917247011" />
-    <state width="1662" height="295" key="GridCell.Tab.0.bottom" timestamp="1577771171403">
+    <state x="534" y="394" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578066502729" />
+    <state width="1877" height="511" key="GridCell.Tab.0.bottom" timestamp="1578066122243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1662" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1577771171403" />
-    <state width="1662" height="295" key="GridCell.Tab.0.center" timestamp="1577771171403">
+    <state width="1877" height="511" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578066122243" />
+    <state width="1877" height="511" key="GridCell.Tab.0.center" timestamp="1578066122243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1662" height="295" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1577771171403" />
-    <state width="1662" height="295" key="GridCell.Tab.0.left" timestamp="1577771171403">
+    <state width="1877" height="511" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578066122243" />
+    <state width="1877" height="511" key="GridCell.Tab.0.left" timestamp="1578066122243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1662" height="295" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1577771171403" />
-    <state width="1662" height="295" key="GridCell.Tab.0.right" timestamp="1577771171403">
+    <state width="1877" height="511" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578066122243" />
+    <state width="1877" height="511" key="GridCell.Tab.0.right" timestamp="1578066122243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1662" height="295" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1577771171403" />
+    <state width="1877" height="511" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578066122243" />
   </component>
   <component name="masterDetails">
     <states>
